@@ -1,9 +1,13 @@
-import { Box } from "@mui/material";
+import { Box, BoxProps } from "@mui/material";
+import { forwardRef, ForwardRefRenderFunction } from "react";
 
-// type Props = Omit<BoxProps, "display">;
+type Props = Omit<BoxProps, "display">;
 
-const FlexBox = () => {
-  return <Box></Box>;
+const FlexBox: ForwardRefRenderFunction<HTMLDivElement, Props> = (
+  { ...props },
+  ref
+) => {
+  return <Box {...props} display="flex" ref={ref} />;
 };
 
-export default FlexBox;
+export default forwardRef(FlexBox);

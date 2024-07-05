@@ -44,3 +44,16 @@ export default {
 - Netflix GPT
   - Search Bar
   - Movie Suggestion
+
+HOOKS:
+
+1.  useEffect()
+2.  loader() => useLoaderData();
+3.  useParam()
+4.  Form => react-router-dom
+5.  action()
+6.  redirect() => useNavigate()
+7.  useActionData()
+8.  submit() => useSubmit()
+9.  useFetcher()
+10. defer()
