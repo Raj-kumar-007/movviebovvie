@@ -47,8 +47,8 @@ export default {
 
 HOOKS:
 
-1.  useEffect()
-2.  loader() => useLoaderData();
+1.  useEffect() --- Done
+2.  loader() => useLoaderData(); -- Done
 3.  useParam()
 4.  Form => react-router-dom
 5.  action()
