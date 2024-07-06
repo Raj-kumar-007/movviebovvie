@@ -12,8 +12,8 @@ const Login = () => {
     }}
   >
       <Form method="POST" className="form">
-        <TextField label="Email" variant="outlined" />
-        <TextField label="Password" variant="outlined" />
+        <TextField label="Email" variant="outlined" name="email"/>
+        <TextField label="Password" variant="outlined" name="password"/>
         <Button type="submit" variant="contained">
           Login 
         </Button>
