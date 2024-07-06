@@ -1,10 +1,11 @@
 import { FC } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Body from "../features/Body";
-import Browse from "../features/Browse";
-import Login from "../features/Login";
-import Posts from "../features/Posts/Posts";
+import Body from "../features/body";
+import Browse from "../features/browse";
+import Login from "../features/login";
+import Posts from "../features/posts/Posts";
 import { postLoader } from "./loaders/postLoader";
+import { loginAction } from "./actions/loginAction";
 
 // Planning to implement the lazy loading concept
 
@@ -20,6 +21,7 @@ const routes = createBrowserRouter([
   {
     path: "/login",
     element: <Login />,
+    action: loginAction,
   },
   {
     path: "/posts",

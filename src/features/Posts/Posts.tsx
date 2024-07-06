@@ -1,16 +1,18 @@
 import { List, ListItem, Typography } from "@mui/material";
 import Box from "@mui/material/Box";
 import { useLoaderData } from "react-router-dom";
-import { Post } from "./types";
 import { FC } from "react";
+import { Post } from "./types";
 
 const Posts: FC = () => {
   const posts = useLoaderData() as Post[];
 
-  let content = <Typography variant="h6"> No Posts found </Typography>;
+  if (!posts) {
+    return <Box>Loading...</Box>;
+  }
 
-  if (posts) {
-    content = (
+  return (
+    posts && (
       <List>
         {posts.map((post) => (
           <ListItem key={post.id}>
@@ -18,10 +20,8 @@ const Posts: FC = () => {
           </ListItem>
         ))}
       </List>
-    );
-  }
-
-  return <Box>{content}</Box>;
+    )
+  );
 };
 
 export default Posts;

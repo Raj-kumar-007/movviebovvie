@@ -1,4 +1,4 @@
-import FlexBox from "../../Components/FlexBox";
+import FlexBox from "../../components/flexbox";
 
 const Browse = () => {
   return <FlexBox></FlexBox>;

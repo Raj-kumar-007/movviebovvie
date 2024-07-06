@@ -1,7 +1,7 @@
 import { Box } from "@mui/material";
-import Footer from "../features/Footer";
-import Header from "../features/Header";
-import Router from "../Router";
+import Header from "../features/header";
+import Router from "../router";
+import Footer from "../features/footer";
 
 function App() {
   return (

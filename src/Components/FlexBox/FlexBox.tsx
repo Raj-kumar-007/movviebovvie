@@ -5,7 +5,7 @@ type Props = Omit<BoxProps, "display">;
 
 const FlexBox: ForwardRefRenderFunction<HTMLDivElement, Props> = (
   { ...props },
-  ref
+  ref,
 ) => {
   return <Box {...props} display="flex" ref={ref} />;
 };
