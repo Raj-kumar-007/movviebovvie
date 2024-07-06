@@ -1,18 +1,17 @@
-import { FC } from "react";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Body from "../features/body";
+import { createBrowserRouter } from "react-router-dom";
 import Browse from "../features/browse";
 import Login from "../features/login";
 import Posts from "../features/posts/Posts";
 import { postLoader } from "./loaders/postLoader";
 import { loginAction } from "./actions/loginAction";
+import { Overview } from "../features/overview/Overview";
 
 // Planning to implement the lazy loading concept
 
-const routes = createBrowserRouter([
+const routes = [
   {
     path: "/",
-    element: <Body />,
+    element: <Overview />,
   },
   {
     path: "/browse",
@@ -28,10 +27,6 @@ const routes = createBrowserRouter([
     element: <Posts />,
     loader: postLoader,
   },
-]);
+];
 
-const Router: FC = () => {
-  return <RouterProvider router={routes}></RouterProvider>;
-};
-
-export default Router;
+export const router = createBrowserRouter(routes, { basename: "/netflix" });
