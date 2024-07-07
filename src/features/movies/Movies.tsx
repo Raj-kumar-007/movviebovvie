@@ -1,7 +1,8 @@
+import { FC } from "react";
 import FlexBox from "../../components/FlexBox/FlexBox";
 
-const Browse = () => {
+const Movies: FC = () => {
   return <FlexBox></FlexBox>;
 };
 
-export default Browse;
+export default Movies;
