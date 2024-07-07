@@ -4,7 +4,7 @@ import MenuHeader from "../header/MenuHeader";
 
 export const Overview = () => {
   return (
-    <Box sx>
+    <Box>
       <MenuHeader />
       <WelcomeScreen />
     </Box>
