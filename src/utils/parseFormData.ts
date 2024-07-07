@@ -1,11 +1,11 @@
 import set from "lodash/set";
 
-export function parseFormData(formData) {
+export function parseFormData(formData: FormData) {
   const data = {};
 
   for (const [key, value] of formData) {
-    if (isStringifiedJSON(value)) {
-      set(data, key, JSON.parse(value));
+    if (isStringifiedJSON(value as string)) {
+      set(data, key, JSON.parse(value as string));
     } else {
       set(data, key, value);
     }
