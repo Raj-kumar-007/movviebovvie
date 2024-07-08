@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
-import Browse from "../features/browse-1";
-import Login from "../features/login-1";
+import Browse from "../features/browse";
+import Login from "../features/login";
 import Posts from "../features/posts-1/Posts";
 import { postLoader } from "./loaders/postLoader";
 import { loginAction } from "./actions/loginAction";
