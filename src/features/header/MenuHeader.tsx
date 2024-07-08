@@ -1,6 +1,6 @@
-import { Box, Button } from "@mui/material";
-import { Header } from "./elements";
+import { Button, Container, Typography } from "@mui/material";
 import { useNavigate } from "react-router-dom";
+import FlexBox from "../../components/FlexBox";
 
 const MenuHeader = () => {
   const navigate = useNavigate();
@@ -10,17 +10,32 @@ const MenuHeader = () => {
   };
 
   return (
-    <Header>
-      <Box sx={{ ml: "auto", alignContent: "center" }}>
-        <Button
-          variant="contained"
-          sx={{ backgroundColor: "primary" }}
-          onClick={handleSignIn}
-        >
-          Sign in
-        </Button>
-      </Box>
-    </Header>
+    <Container sx={{ display: "flex", justifyContent: "space-between" }}>
+      <FlexBox></FlexBox>
+      <FlexBox
+        sx={{ alignItems: "center", justifyContent: "flex-end" }}
+        gap={2}
+      >
+        <FlexBox>
+          <Typography variant="h4">Home</Typography>
+        </FlexBox>
+        <FlexBox>
+          <Typography variant="h4">Movies</Typography>
+        </FlexBox>
+        <FlexBox>
+          <Typography variant="h4">TV List</Typography>
+        </FlexBox>
+        <FlexBox sx={{ height: "5rem", justifyContent: "flex-end" }}>
+          <Button
+            variant="contained"
+            sx={{ backgroundColor: "primary", my: "1rem" }}
+            onClick={handleSignIn}
+          >
+            Sign in
+          </Button>
+        </FlexBox>
+      </FlexBox>
+    </Container>
   );
 };
 

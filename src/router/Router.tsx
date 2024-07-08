@@ -14,6 +14,10 @@ const routes = [
     element: <Overview />,
   },
   {
+    path: "/home",
+    element: <Overview />,
+  },
+  {
     path: "/browse",
     element: <Browse />,
   },
@@ -29,6 +33,4 @@ const routes = [
   },
 ];
 
-export const router = createBrowserRouter(routes, {
-  basename: "/MovvieBovvie",
-});
+export const router = createBrowserRouter(routes);

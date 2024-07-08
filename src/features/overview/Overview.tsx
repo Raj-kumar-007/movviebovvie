@@ -1,12 +1,12 @@
-import { Box } from "@mui/material";
+import FlexBox from "../../components/FlexBox";
 import { WelcomeScreen } from "../body/WelcomeScreen";
 import MenuHeader from "../header/MenuHeader";
 
 export const Overview = () => {
   return (
-    <Box>
+    <FlexBox flexDirection="column">
       <MenuHeader />
       <WelcomeScreen />
-    </Box>
+    </FlexBox>
   );
 };
