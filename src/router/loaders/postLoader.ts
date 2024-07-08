@@ -1,6 +1,6 @@
 import axios from "axios";
 import { getData } from "../../utils/axios";
-import { Post } from "../../features/posts-1/types";
+import { Post } from "../../features/posts/types";
 
 export const postLoader = async () => {
   const postData = await axios

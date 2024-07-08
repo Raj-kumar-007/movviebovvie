@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import Browse from "../features/browse";
 import Login from "../features/login";
-import Posts from "../features/posts-1/Posts";
+import Posts from "../features/posts/Posts";
 import { postLoader } from "./loaders/postLoader";
 import { loginAction } from "./actions/loginAction";
 import { Overview } from "../features/overview/Overview";
