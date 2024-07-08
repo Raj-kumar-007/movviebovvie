@@ -1,5 +1,5 @@
 import { FC } from "react";
-import FlexBox from "../../components/FlexBox/FlexBox";
+import FlexBox from "../../components/flexbox-1/FlexBox";
 
 const Movies: FC = () => {
   return <FlexBox></FlexBox>;
